@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-07-11T00:39:43.624481+00:00",
+  "timestamp": "2021-07-15T00:35:38.749580+00:00",
   "repo": "cfrg/draft-irtf-cfrg-voprf",
   "labels": [
     {
@@ -18399,18 +18399,26 @@
       "labels": [],
       "body": "Still WIP, waiting for a discussion around additive mode.",
       "createdAt": "2021-07-07T16:09:13Z",
-      "updatedAt": "2021-07-09T20:20:47Z",
+      "updatedAt": "2021-07-14T19:03:51Z",
       "baseRepository": "cfrg/draft-irtf-cfrg-voprf",
       "baseRefName": "master",
       "baseRefOid": "24a7d4d1a22d7cd796b3d1b427d43d347fb8a217",
       "headRepository": "claucece/draft-irtf-cfrg-voprf",
       "headRefName": "master",
-      "headRefOid": "937cc0449e405d06dbc74fd4075035de6499933b",
+      "headRefOid": "66778300b00f5602466d2ae3ad41d7d1d179d738",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
       "mergeCommit": null,
-      "comments": [],
+      "comments": [
+        {
+          "author": "jedisct1",
+          "authorAssociation": "NONE",
+          "body": "Oh, this is awesome! \ud83c\udf89",
+          "createdAt": "2021-07-14T19:03:51Z",
+          "updatedAt": "2021-07-14T19:03:51Z"
+        }
+      ],
       "reviews": []
     },
     {
