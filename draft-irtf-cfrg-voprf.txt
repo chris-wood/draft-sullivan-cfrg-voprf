@@ -5,10 +5,10 @@
 Network Working Group                                        A. Davidson
 Internet-Draft                                            Brave Software
 Intended status: Informational                          A. Faz-Hernandez
-Expires: 7 January 2022                                      N. Sullivan
+Expires: 16 January 2022                                     N. Sullivan
                                                                C.A. Wood
                                                               Cloudflare
-                                                             6 July 2021
+                                                            15 July 2021
 
 
    Oblivious Pseudorandom Functions (OPRFs) using Prime-Order Groups
@@ -50,7 +50,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on 7 January 2022.
+   This Internet-Draft will expire on 16 January 2022.
 
 Copyright Notice
 
@@ -1549,9 +1549,9 @@ Table of Contents
    [I-D.irtf-cfrg-opaque]
               Krawczyk, H., Bourdrez, D., Lewi, K., and C. A. Wood, "The
               OPAQUE Asymmetric PAKE Protocol", Work in Progress,
-              Internet-Draft, draft-irtf-cfrg-opaque-05, 7 June 2021,
+              Internet-Draft, draft-irtf-cfrg-opaque-06, 12 July 2021,
               <https://datatracker.ietf.org/doc/html/draft-irtf-cfrg-
-              opaque-05>.
+              opaque-06>.
 
    [JKK14]    "Round-Optimal Password-Protected Secret Sharing and
               T-PAKE in the Password-Only model",
@@ -1582,6 +1582,10 @@ Table of Contents
    [RFC8174]  Leiba, B., "Ambiguity of Uppercase vs Lowercase in RFC
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://datatracker.ietf.org/doc/html/rfc8174>.
+
+   [RFC8446]  Rescorla, E., "The Transport Layer Security (TLS) Protocol
+              Version 1.3", RFC 8446, DOI 10.17487/RFC8446, August 2018,
+              <https://datatracker.ietf.org/doc/html/rfc8446>.
 
    [RISTRETTO]
               Valence, H. D., Grigg, J., Tankersley, G., Valsorda, F.,
@@ -1620,10 +1624,6 @@ Table of Contents
               Institute of Standards and Technology report,
               DOI 10.6028/nist.sp.800-56ar3, April 2018,
               <https://doi.org/10.6028/nist.sp.800-56ar3>.
-
-   [RFC8446]  Rescorla, E., "The Transport Layer Security (TLS) Protocol
-              Version 1.3", RFC 8446, DOI 10.17487/RFC8446, August 2018,
-              <https://datatracker.ietf.org/doc/html/rfc8446>.
 
 Appendix A.  Test Vectors
 
