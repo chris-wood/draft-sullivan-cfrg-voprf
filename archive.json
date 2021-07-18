@@ -1,6 +1,6 @@
 {
   "magic": "E!vIA5L86J2I",
-  "timestamp": "2021-07-15T00:35:38.749580+00:00",
+  "timestamp": "2021-07-18T00:36:52.616411+00:00",
   "repo": "cfrg/draft-irtf-cfrg-voprf",
   "labels": [
     {
@@ -3757,9 +3757,9 @@
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
-      "body": "Public metadata is useful for applications like OPAQUE or Privacy Pass.\r\n\r\nIt will be good to add the algorithm defined here: https://eprint.iacr.org/2021/864.pdf\r\n\r\ncc./ @chris-wood @alxdavids ",
+      "body": "[Tyagi et al.](https://eprint.iacr.org/2021/864.pdf) present a modified variant of the 2HashDH-based OPRF that enables so-called \"partially-oblivious\" evaluation. Abstractly, this means that the OPRF protocol has two types of PRF inputs:\r\n\r\n- Private input, typically provided by the clients, that is hidden from the server during evaluation.\r\n- Public input, input by client and server, that is visible to both client and server during the protocol.\r\n\r\nRunning this partially-oblivious variant with \"empty\" public input is functionally the same as the design today, wherein there is no public input. Thus, this type of extension seems useful for enabling a wider set of applications, especially Privacy Pass and OPAQUE.\r\n\r\nAs an added benefit, one consequence of this variant is that it requires multiplicative blinding, which should simplify choices available to implementers and other applications using the OPRF. (See #241 for discussion around the considerations introduced by allowing multiple blinding variants.)",
       "createdAt": "2021-07-07T19:10:51Z",
-      "updatedAt": "2021-07-07T19:11:23Z",
+      "updatedAt": "2021-07-16T16:48:35Z",
       "closedAt": null,
       "comments": [
         {
@@ -18397,15 +18397,15 @@
       "authorAssociation": "CONTRIBUTOR",
       "assignees": [],
       "labels": [],
-      "body": "Still WIP, waiting for a discussion around additive mode.",
+      "body": "",
       "createdAt": "2021-07-07T16:09:13Z",
-      "updatedAt": "2021-07-14T19:03:51Z",
+      "updatedAt": "2021-07-15T18:03:42Z",
       "baseRepository": "cfrg/draft-irtf-cfrg-voprf",
       "baseRefName": "master",
       "baseRefOid": "24a7d4d1a22d7cd796b3d1b427d43d347fb8a217",
       "headRepository": "claucece/draft-irtf-cfrg-voprf",
       "headRefName": "master",
-      "headRefOid": "66778300b00f5602466d2ae3ad41d7d1d179d738",
+      "headRefOid": "a7ca3127f05f9b5ef245fef7e3ec3490533292c7",
       "closedAt": null,
       "mergedAt": null,
       "mergedBy": null,
@@ -18426,26 +18426,42 @@
       "id": "MDExOlB1bGxSZXF1ZXN0Njg1NjQzMDM3",
       "title": "Updating CIRCL implementation.",
       "url": "https://github.com/cfrg/draft-irtf-cfrg-voprf/pull/260",
-      "state": "OPEN",
+      "state": "MERGED",
       "author": "armfazh",
       "authorAssociation": "COLLABORATOR",
       "assignees": [],
       "labels": [],
       "body": " - Make the file an ascii document.\r\n - Add RFC8446 to references.\r\n - CIRCL supports v07 [PR](https://github.com/cloudflare/circl/pull/241)",
       "createdAt": "2021-07-08T02:57:07Z",
-      "updatedAt": "2021-07-08T02:57:59Z",
+      "updatedAt": "2021-07-15T12:43:28Z",
       "baseRepository": "cfrg/draft-irtf-cfrg-voprf",
       "baseRefName": "master",
       "baseRefOid": "24a7d4d1a22d7cd796b3d1b427d43d347fb8a217",
       "headRepository": "armfazh/draft-irtf-cfrg-voprf",
       "headRefName": "nitsJul07",
       "headRefOid": "f8f5d6d89283d63b565ca0a9b2733865a3a88098",
-      "closedAt": null,
-      "mergedAt": null,
-      "mergedBy": null,
-      "mergeCommit": null,
+      "closedAt": "2021-07-15T12:43:28Z",
+      "mergedAt": "2021-07-15T12:43:28Z",
+      "mergedBy": "chris-wood",
+      "mergeCommit": {
+        "oid": "2177aecf524ab6e7380ce560f8a02c65662c30d1"
+      },
       "comments": [],
-      "reviews": []
+      "reviews": [
+        {
+          "id": "MDE3OlB1bGxSZXF1ZXN0UmV2aWV3NzA3MzAyNzIz",
+          "commit": {
+            "abbreviatedOid": "f8f5d6d"
+          },
+          "author": "chris-wood",
+          "authorAssociation": "COLLABORATOR",
+          "state": "APPROVED",
+          "body": "",
+          "createdAt": "2021-07-15T12:43:19Z",
+          "updatedAt": "2021-07-15T12:43:19Z",
+          "comments": []
+        }
+      ]
     }
   ]
 }
